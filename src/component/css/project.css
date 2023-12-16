@@ -1,0 +1,67 @@
+.project{ margin-top: 70px; }
+
+.project .projectShowContainer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.project .projectShowContainer .projectBox{
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #172741;
+}
+
+.project .projectShowContainer .projectBox img { width: 100%; border-radius: 10px; }
+
+.project .projectShowContainer .projectBox .websiteName{ font-size: 20px; margin: 0;  }
+
+.project .projectShowContainer .projectBox > div{ margin-top: 10px; }
+
+.project .projectShowContainer .projectBox span {
+    font-size: 18px;
+    color: #0891B2;
+    background-color: #000c0eb6;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.project .projectShowContainer .projectBox span:hover { color: #00ccff; cursor: pointer; }
+
+.project .projectShowContainer .projectBox span:nth-child(1){ margin-right: 20px; }
+
+@media (max-width:1000px){
+    .project{ margin-top: 30px; }
+    .project .projectShowContainer{
+        padding-bottom: 30px;
+        grid-template-columns: 300px 300px;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:700px){
+    .project{ margin-top: 20px; }
+
+    .project .projectShowContainer{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        grid-template-columns: 250px 250px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project .projectShowContainer .projectBox{ padding: 10px; }
+    .project .projectShowContainer .projectBox .websiteName{ font-size: 18px; }
+    .project .projectShowContainer .projectBox span{ font-size: 16px; }
+}
+
+@media (max-width:550px){
+    .project{ margin-top: 20px; }
+    .project .projectShowContainer{ grid-template-columns: 1fr; margin-top: 20px; }
+}
