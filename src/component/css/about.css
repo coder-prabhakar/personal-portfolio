@@ -1,6 +1,6 @@
 #about {
     margin: 100px 0;
- }
+}
 
 #about .container{
     padding: 30px;
@@ -93,7 +93,7 @@
 
     #about .aboutImage{
         display: inherit;
-        width: 95%;
+        width: 220px;
         margin: 0 auto;
     }
 
