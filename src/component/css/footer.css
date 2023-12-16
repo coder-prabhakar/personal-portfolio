@@ -61,7 +61,7 @@
 }
 
 @media (max-width:400px) {
-    .footer{ padding: 20px 0 10px 0; }
+    .footer{ padding: 10px 0 5px 0; }
     .footer .container{ padding: 0 10px; }
     .footer h1{ font-size: 20px; }
     .footer .contact-info { margin-top: 15px; }
@@ -69,13 +69,13 @@
         grid-template-columns: 25px 1fr;
         font-size: 14px;
         margin-top: 0;
-        line-height: 10px;
+        margin-bottom: 10px;
     }
     .footer .contact-info p i { font-size: 18px; } 
-    .footer .copyright-container { margin-top: 10px; }
+    .footer .copyright-container { margin-top: 7px; }
     .footer .copyright-container p {
         font-size: 14px;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 0;
     }
 }
