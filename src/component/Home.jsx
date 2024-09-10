@@ -1,5 +1,5 @@
 import "./css/home.css"
-import profileImage from "./image/home-profile-image.png"
+import profileImage from "./image/main-image.png"
 
 function Home() {
   return (
