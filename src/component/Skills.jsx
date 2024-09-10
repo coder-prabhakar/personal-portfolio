@@ -30,17 +30,17 @@ function Skills() {
                     
                 </div>
                 <div className="box">
-                    <div><i style={{color:"#60c700"}} class="fa-brands fa-node-js"></i></div>
+                    <div><i style={{color:"#1ABCFE"}} class="fa-brands fa-figma"></i></div>
                     <div>
-                        <h1>Node js</h1>
-                        <p>Basic</p>
+                        <h1>Figma</h1>
+                        <p>Intermediate</p>
                     </div>
                 </div>
                 <div className="box">
                     <div><i style={{color:"#00aeff"}} class="fa-brands fa-react"></i></div>
                     <div>
                         <h1>React js</h1>
-                        <p>Basic</p>
+                        <p>Intermediate</p>
                     </div>
                 </div>
                 <div className="box">
@@ -56,4 +56,4 @@ function Skills() {
   )
 }
 
-export default Skills
+export default Skills;
