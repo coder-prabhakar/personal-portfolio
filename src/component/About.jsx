@@ -13,7 +13,7 @@ function About() {
                     <div>
                         <div className="box">
                             <h2><i style={{color:"#00ccff"}} class="fa-solid fa-award"></i> &nbsp; Experience</h2>
-                            <p>04+ Years</p>
+                            <p>02+ Years</p>
                         </div>
                         <div className="box">
                             <h2><i style={{color:"#00ccff"}} class="fa-solid fa-book-open-reader"></i> &nbsp; Education</h2>
