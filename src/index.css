@@ -4,7 +4,7 @@ html{ font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
 body { margin: 0; background-color: #04152d; color: #ffffff; }
 *{ outline: none; text-decoration: none; box-sizing: border-box; }
 
-@media (min-width: 1001px){
+@media only screen and (min-width: 1001px){
     .container{
         width: 1000px;
         margin: 50px auto;
@@ -28,13 +28,13 @@ body { margin: 0; background-color: #04152d; color: #ffffff; }
     color: #949494;
 }
 
-@media (max-width:700px) {
+@media only screen and (max-width:700px) {
     body{
         padding-bottom: 70px;
     }
 }
 
-@media (max-width: 550px){
+@media only screen and (max-width: 550px){
     .sectionTitle{ font-size: 30px; font-weight: 500; }
     .sectionHeadline{ font-size: 17px; line-height: 15px; font-weight: 500; }
 }
