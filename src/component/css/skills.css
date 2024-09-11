@@ -33,7 +33,7 @@
     color: #949494;
 }
 
-@media (max-width:700px) {
+@media only screen and (max-width:700px) {
     #skills{
         background-color: #0f2d4d;
         padding: 20px 0 30px 0;
@@ -45,16 +45,16 @@
     }
 }
 
-@media (max-width:450px) {
+@media only screen and (max-width:450px) {
     #skills{
         background-color: #0f2d4d;
         padding: 20px 0 20px 0;
     }
     
     #skills .container .skillShowContainer {
-        margin-top: 20px;
-        grid-template-columns: auto;
-        gap: 5px;
+        margin-top: 25px;
+        column-gap: 30px;
+        row-gap: 20px;;
     }
 
     #skills .container .skillShowContainer i{
@@ -74,4 +74,12 @@
     }
 
     #skills .container .skillShowContainer .box{ align-items: center; }
+}
+
+@media only screen and (max-width:370px){
+    #skills .container .skillShowContainer {
+        grid-template-columns: auto;
+        margin-top: 25px;
+        row-gap: 10px;
+    }
 }
