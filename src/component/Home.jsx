@@ -14,8 +14,26 @@ function Home() {
                 <p className="nameText">My Name is Prabhakar</p>
                 <p className="workRoleText">Frontend Developer</p>
                 <div className="icon">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+
+                    {/* Github Logo */}
+                    <a
+                    href="https://github.com/coder-prabhakar"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{all:'unset'}}
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    {/* Linkedin Logo */}
+                    <a
+                    href="https://www.linkedin.com/in/prabhakar-kumar-b08a9b231/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -23,4 +41,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
