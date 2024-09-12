@@ -8,119 +8,154 @@
     background-color: #03010e5e;
 }
 
-#about .about-container{
-    padding: 20px 0 0 0;
+#about .container .about-content{
+    padding-top: 20px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-areas:
+      "aboutCont aboutImg"
+      "aboutBox aboutImg";
 }
 
-#about .aboutContent > p{
+#about .about-content > p{
     color: #c5c5c5;
     text-align: justify;
+    grid-area: aboutCont;
 }
 
-#about .aboutContent > p > div {
+#about .about-content > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: space-between;
+    grid-area: aboutBox;
 }
 
-#about .aboutContent .box{
+#about .about-content .box{
     padding: 15px 5px;
     text-align: center;
     border: 1px solid #c5c5c58f;
     border-radius: 30px;
 }
 
-#about .aboutContent .box > h2 {
+#about .about-content .box > h2 {
     margin: 0;
     font-weight: 400;
 }
 
-#about .aboutContent p div .box > p {
+#about .about-content .box > p {
     margin: 0;
     line-height: 35px;
     color: #929292;
 }
 
-#about .floatAboutImg{
-    float: right;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    background: #0891B2;
-    border-radius: 40px;
-}
-
 #about .aboutImage{
     width: 350px;
-    background-color: #0891B2;
+    background: #0891B2;
     border-radius: 40px;
-    overflow: hidden;
+    grid-area: aboutImg;
 }
 
-@media (max-width: 1050px){
+@media only screen and (max-width: 1050px){
     #about .container{
         width: 90%;
         margin: 0 auto; 
         padding: 20px;
     }
-    #about .about-container{ gap: 20px; }
+
+    #about .container .about-content{
+        gap: 20px;
+        grid-template-areas:
+          "aboutCont aboutImg"
+          "aboutBox aboutBox";
+    }
+
+    #about .aboutImage{ width: 250px; }
 }
 
-@media (max-width: 970px){
-    #about .floatAboutImg{ width: 300px; }
-}
+@media only screen and (max-width: 880px){
+    #about .container .about-content{
+        column-gap: 20px;
+        row-gap: 0;
+        grid-template-areas:
+          "aboutImg aboutImg aboutBox aboutBox aboutBox"
+          "aboutCont aboutCont aboutCont aboutCont aboutCont";
+    }
 
-@media (min-width: 871px){
-    #about .aboutImage{ display: none; }
-}
-
-@media (max-width: 870px){
-    #about .aboutImage{ display: none; }
-    #about .floatAboutImg{ display: none; }
-
-}
-
-@media (max-width: 550px){
-    #about { margin: 50px 0; }
-
-    #about .container { padding: 10px 10px 5px 10px; }
-
-    #about .about-container{
+    #about .about-content > div {
+        width: 230px;
         display: flex;
-        flex-direction: column-reverse;
-        gap: 15px;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    #about .about-content > div > .box{ height: 100px; }
+
+    #about .aboutImage{ margin-left: auto; }
+}
+
+
+@media only screen and (max-width: 600px){
+    #about { margin: 50px 0;}
+
+    #about .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    #about .container .about-content{
+        column-gap: 15px;
     }
 
     #about .aboutImage{
-        display: inherit;
-        width: 220px;
-        margin: 0 auto;
+        width: 180px;
     }
 
-    #about .aboutContent > p > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+    #about .about-content > div {
+        width: 180px;
+        gap: 30px;
     }
 
-    #about .aboutContent > p > div > .box{
-        width: 190px;
+    #about .about-content > div > .box{
         padding: 5px 0;
         border-radius: 20px;
+        height: 70px;
     }
     
-    #about .aboutContent > p > div > .box > h2 { font-size: 17px; margin-top: 5px; }
+    #about .about-content div > .box > h2 { font-size: 17px; margin-top: 5px; }
     
-    #about .aboutContent > p > div > .box > p {
+    #about .about-content div > .box > p {
         font-size: 14px;
         line-height: 25px;
     }
 
-    #about .aboutContent > p{
-        margin-top: 10px;
+    #about .about-content > p{
         font-size: 14px;
         line-height: 20px;
-        padding: 0 7px;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    #about .container .about-content{
+        grid-template-areas:
+          "aboutImg aboutImg"
+          "aboutCont aboutCont"
+          "aboutBox aboutBox";
+    }
+
+    #about .container{
+        padding-bottom: 20px;
+    }
+
+    #about .aboutImage{
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    #about .about-content > div {
+        margin: 0 auto;
+        gap: 15px;
     }
 }
