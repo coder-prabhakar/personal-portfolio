@@ -1,8 +1,7 @@
 import "./css/skills.css"
+import { skillData } from "./Data/Data";
 
 function Skills() {
-
-    const skillsData = require('../data.json')
 
   return (
     <section id="skills">
@@ -11,7 +10,7 @@ function Skills() {
             <p className="sectionHeadline">My Expertise</p>
             <div className="skillShowContainer">
                 {
-                    skillsData.skillData.map((item,index)=>(
+                    skillData.map((item,index)=>(
                         <div className="box">
                             <div><i style={{color:item.color}} class={item.iconClass}></i></div>
                             <div>
@@ -21,7 +20,6 @@ function Skills() {
                         </div>
                     ))
                 }
-                
             </div>
         </div>
     </section>
