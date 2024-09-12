@@ -21,7 +21,7 @@ function Project() {
                   )
                 }
               </div>
-              <a href={item.gitHubLink} target="_blank">View on GitHub</a>
+              <a href={item.gitHubLink} target="_blank" rel="noreferrer">View on GitHub</a>
             </div>
           ))
         }
