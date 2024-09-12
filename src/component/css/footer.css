@@ -13,16 +13,20 @@
 
 .footer p{ color:#b6b6b6; }
 
-.footer .contact-info { display: flex; flex-direction: row; justify-content: space-around; }
-
-.footer .contact-info p{
-    display: grid;
-    grid-template-columns: 45px 1fr;
-    align-items: center;
+.footer .contact-info {
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer .contact-info p i {
-    font-size: 30px;
+.footer .contact-info p, .footer .contact-info a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.footer .contact-info p i, .footer .contact-info a i {
+    font-size: 25px;
 }
 
 .footer .copyright-container {
@@ -38,50 +42,58 @@
 
 .footer .copyright-container p {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-@media (max-width:1050px) {
-    .footer .container{ padding: 0 30px; }
-    .footer .contact-info p{
+@media only screen and (max-width:1050px) {
+    .footer{
+        padding: 40px 30px 20px 30px;
+    }
+
+    .footer .container{ width: 100%; }
+
+    .footer .contact-info p, .footer .contact-info a{
         grid-template-columns: 40px 1fr;
     }
 }
 
-@media (max-width:900px) {
+@media only screen and (max-width:900px) {
     .footer .contact-info {
+        margin-top: 10px;
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-around;
     }
 }
 
-@media (max-width:600px) {
-    .footer .contact-info { grid-template-columns: 1fr;  }
+@media only screen and (max-width:600px) {
+    .footer{
+        padding: 30px 20px 20px 20px;
+    }
+
+    .footer h1{ 
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .footer .contact-info {
+        grid-template-columns: 1fr; 
+    }
+
+    .footer .contact-info p, .footer .contact-info a{
+        font-size: 17px;
+        margin: 8px 0;
+    }
 }
 
-@media (max-width:400px) {
-    .footer{ padding: 10px 0 5px 0; }
-    .footer .container{ padding: 0 10px; }
-    .footer h1{ font-size: 20px; }
-    .footer .contact-info { margin-top: 15px; }
-    .footer .contact-info p{
-        grid-template-columns: 25px 1fr;
-        font-size: 14px;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-    .footer .contact-info p i { font-size: 18px; } 
-    .footer .copyright-container { margin-top: 7px; }
+@media only screen and (max-width:500px) {
+    .footer .contact-info p i, .footer .contact-info a i {
+        font-size: 27px;
+    } 
+
     .footer .copyright-container p {
         font-size: 14px;
         margin-top: 15px;
         margin-bottom: 0;
-    }
-}
-
-@media (max-width:280px){
-    .footer .contact-info .contactEmail{
-        grid-template-columns: 1fr;
     }
 }
