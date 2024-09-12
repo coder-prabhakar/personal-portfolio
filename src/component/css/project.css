@@ -1,4 +1,6 @@
-.project{ margin-top: 70px; }
+.project{
+    margin-top: 70px;
+}
 
 .project .projectShowContainer{
     margin-top: 50px;
@@ -8,33 +10,48 @@
     padding: 0 20px;
 }
 
-.project .projectShowContainer .projectBox{
+.project .projectBox{
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
     background-color: #172741;
 }
 
-.project .projectShowContainer .projectBox img { width: 100%; border-radius: 10px; }
-
-.project .projectShowContainer .projectBox .websiteName{ font-size: 20px; margin: 0;  }
-
-.project .projectShowContainer .projectBox > div{ margin-top: 10px; }
-
-.project .projectShowContainer .projectBox span {
-    font-size: 18px;
-    color: #0891B2;
-    background-color: #000c0eb6;
+.project .projectBox img {
+    width: 100%;
     border-radius: 10px;
-    padding: 5px 10px;
 }
 
-.project .projectShowContainer .projectBox span:hover { color: #00ccff; cursor: pointer; }
+.project .projectBox .websiteName{
+    font-size: 17px;
+    margin: 0;
+}
 
-.project .projectShowContainer .projectBox span:nth-child(1){ margin-right: 20px; }
+.project .projectBox > div{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(144, 144, 144);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
 
-@media (max-width:1000px){
+.project .projectBox a {
+    color: #0891B2;
+    padding: 5px 10px;
+    background-color: #000c0eb6;
+    border-radius: 10px;
+}
+
+.projectBox a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*----------------- Media Queries -------------------*/
+@media only screen and (max-width:1000px){
     .project{ margin-top: 30px; }
+
     .project .projectShowContainer{
         padding-bottom: 30px;
         grid-template-columns: 300px 300px;
@@ -44,7 +61,7 @@
     }
 }
 
-@media (max-width:700px){
+@media only screen and (max-width:700px){
     .project{ margin-top: 20px; }
 
     .project .projectShowContainer{
@@ -56,12 +73,23 @@
         justify-content: center;
     }
 
-    .project .projectShowContainer .projectBox{ padding: 10px; }
-    .project .projectShowContainer .projectBox .websiteName{ font-size: 18px; }
-    .project .projectShowContainer .projectBox span{ font-size: 16px; }
+    .project .projectBox{ padding: 10px; }
+
+    .project .projectBox .websiteName{
+        font-size: 18px;
+    }
 }
 
-@media (max-width:550px){
+@media only screen and (max-width:550px){
     .project{ margin-top: 20px; }
-    .project .projectShowContainer{ grid-template-columns: 1fr; margin-top: 20px; }
+
+    .project .projectShowContainer{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    
+    }
+
+    .project .projectBox{ 
+        padding: 10px 10px 15px 10px;
+    }
 }
